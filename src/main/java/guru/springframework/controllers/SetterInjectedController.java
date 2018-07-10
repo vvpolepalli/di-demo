@@ -10,7 +10,7 @@ public class SetterInjectedController {
     private GreetingService greetingService;
 
     public String sayHello() {
-        return "Setter: "+greetingService.sayGreeting();
+        return greetingService.sayGreeting();
     }
 
     @Autowired
